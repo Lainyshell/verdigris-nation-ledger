@@ -1,0 +1,35 @@
+import requests
+
+# Configuration for the locker reservation API
+API_BASE_URL = "https://locker-reservation-service.com/api"  # Replace with the actual API endpoint
+API_USERID = "2E416VERDI381"
+API_PASSWORD = "S5464Q68HI8824V"
+ADDRESS = "728 Crescent Way, Radcliff, KY 40160"
+
+def reserve_locker(address):
+    # Authenticate with the API
+    auth_response = requests.post(
+        f"{API_BASE_URL}/auth",
+        json={"userid": API_USERID, "password": API_PASSWORD}
+    )
+    
+    if auth_response.status_code != 200:
+        print("Authentication failed:", auth_response.json())
+        return
+
+    auth_token = auth_response.json().get("token")  # Assuming the API returns a token
+    
+    # Make a request to reserve a locker
+    reservation_response = requests.post(
+        f"{API_BASE_URL}/lockers/reserve",
+        json={"address": address},
+        headers={"Authorization": f"Bearer {auth_token}"}
+    )
+    
+    if reservation_response.status_code == 200:
+        print("Locker reserved successfully:", reservation_response.json())
+    else:
+        print("Failed to reserve locker:", reservation_response.json())
+
+# Reserve a locker at the specified address
+reserve_locker(ADDRESS)
