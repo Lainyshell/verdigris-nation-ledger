@@ -2,8 +2,8 @@ import requests
 
 # Configuration for the locker reservation API
 API_BASE_URL = "https://locker-reservation-service.com/api"  # Replace with the actual API endpoint
-API_USERID = "2E416VERDI381"
-API_PASSWORD = "S5464Q68HI8824V"
+API_USERID = "secret key"
+API_PASSWORD = "secret key"
 ADDRESS = "728 Crescent Way, Radcliff, KY 40160"
 
 def reserve_locker(address):
@@ -32,4 +32,4 @@ def reserve_locker(address):
         print("Failed to reserve locker:", reservation_response.json())
 
 # Reserve a locker at the specified address
-reserve_locker(ADDRESS)
+reserve_locker(ADDRESS) 
