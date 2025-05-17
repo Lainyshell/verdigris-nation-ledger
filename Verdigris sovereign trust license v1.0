@@ -1,0 +1,41 @@
+# Verdigris Sovereign Trust License v1.0
+
+This repository and its contents are issued under sovereign authority by:
+
+**Verdigris Botanica Tribal Nation Trust**  
+Postmaster General: Alaina Letresia Michelle Padgett
+
+---
+
+## Sovereign Terms
+This repository contains constitutional, financial, and jurisdictional records of the Verdigris Nation Trust. Use of these materials constitutes implicit acknowledgment of our trust authority and governance.
+
+### You MAY:
+- View and download for public interest or compliance validation
+- Reference materials for lawful due process
+
+### You MAY NOT:
+- Modify, reissue, or recontextualize content
+- Use for commercial, political, or unauthorized legal claims
+- Host derivative versions without express written consent
+
+## For Developers
+Source code (if any) is licensed separately under the MIT License (see `CODE_LICENSE.md` if provided).
+
+---
+
+© 2025 Verdigris Botanica Tribal Nation Trust. All rights reserved.
+
+This repository is a sovereign digital trust ledger. Unauthorized jurisdictional claims,
+misuse, or misrepresentation of these records constitutes a violation of sovereign law
+under the authority of the Verdigris Botanica Tribal Nation Trust.
+
+Public access does not imply surrender of rights, permissions, or title.
+
+Contact: verdigrisbotanica@mail.com
+
+git add LICENSE.md NOTICE.txt
+git commit -m "Add Sovereign Trust License and Notice"
+git push
+
+
